@@ -1,0 +1,310 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #4A4A4A;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header */
+
+header {
+    height: 64px;
+    width: 100%;
+    align-content: center;
+    background-color: #ffffff;   
+}
+.main-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.main-desktop p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.left {
+    display: flex;
+    margin-left: 16px;
+    height: 32px;
+    align-items: center;
+}
+.right {
+    justify-content: space-between;
+    padding-right: 16px;
+    align-content: center;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #4A4A4A;
+    padding: 8px;
+}
+.main-mobile {
+    width: 100%; 
+    display: inline-flex;
+    justify-content: space-around;
+    height: 64px;
+    align-items: center;  
+}
+
+/* First section */
+
+h1 {
+    font-size: 32px;
+}
+ section {
+    background-color: #D8D8D8;
+ }
+.banner {
+    height: auto;
+    margin-left: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-direction: column; 
+}
+button {
+    width: 90%;
+    background-color:#4A4A4A;
+    color: #ffffff;
+    margin: auto;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+ /* Article section */
+
+.article-desktop {
+    display: flex;
+    background-color:#F3F5F5;
+}
+.article-left {
+   width: 60%;
+}
+.article-left img {
+    max-width: 100%;
+    margin: 32px 24px; 
+}
+.practicing {
+    margin-left: 24px;
+}
+.practicing h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.desktop-cards {
+    display: flex;
+    border-color: #E0E2E2;
+    border-top: groove;
+    border-bottom: groove;
+    border-left: groove;
+    margin:2px;
+    padding:16px;
+}
+#last {
+    background-color: #D8D8D8;
+    border: none;
+}
+.article-right {
+    width: 40%;
+    height: auto;
+    flex-direction: column;
+    margin-top: 16px;
+    padding-left: 45px;
+}
+.desktop-cards img {
+    width: 35%;
+    height: auto;
+}
+.desktop-text {
+    width: 65%;
+    align-content: center;
+    padding-left: 16px;
+}
+.read-more {
+    color: blue;
+    padding: 0;
+}
+.desktop-text p {
+    margin: 8px,0px;
+}
+.mobile-cards img {
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 16px;
+    margin-top: 48px;
+}
+.mobile-text {
+    margin-left: 32px;
+}
+.opinions {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+
+ /* Start learning section */
+
+.start-learning h2 {
+    text-align: center;
+    margin: 0;
+    padding-top: 32px;
+}
+.start-learning {
+    background-color: #EAEBEC;
+    width: 100%; 
+}
+.opinions {
+    margin: 0;
+    padding:0px 0px 32px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+.learning-card img {
+   width: 300px;
+   margin-top: 32px;   
+}
+.learning-card {
+    width:300px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+}
+.learning-text h3 {
+    margin: 0;  
+}
+
+/*Exhibit section*/
+
+.thesis-exhibit {
+    background-color: #F3F5F5;
+}
+.thesis-exhibit h2{
+    text-align: center;
+    padding: 32px 0px 16px 0px;
+    margin-top: 0;
+}
+.exhibit {
+    display: flex;
+    padding-bottom: 24px;
+}
+video{
+    width: 100%;
+}
+.exhibit-video {
+    width:60% ;  
+}
+.fisma a {
+    display: flex;
+    align-items: center;   
+}
+.fisma img {
+    width: 35%;
+    margin:16px;
+}
+.fisma-text{
+    width: 65%;
+    padding-left: 16px;
+}
+#ff {
+    background-color:#D8D8D8;
+}
+
+/*Footer section*/
+
+footer {
+    width: 100%;
+    display: inline-flex;   
+    justify-content: space-between;
+}
+footer p {
+    padding-left: 24px;
+}
+
+footer ul {
+    padding-right: 24px;
+}
+
+/*Mobile media query*/
+
+@media only screen and (max-width: 768px) {
+.main-desktop {
+    display:none;
+}
+.banner-picture {
+    width: 100%;
+}
+.banner {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.article-desktop {
+    display: none;
+}
+.mobile-hidden {
+    display: none;
+}
+.opinions {
+    display: block; 
+}
+.start-learning {
+    padding-left: 16px;
+    width: auto;
+    background-color:#F5F4F5 ;
+}
+.learning-text{
+    margin-top: 8px;
+}
+.learning-text h3 {
+    padding-left: 16px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    background-color: #D8D8D8;   
+}
+.start-learning h2 {
+    padding-top: 32px;
+    margin-top: 32px;  
+}
+.learning-card {
+    width:95%;   
+}
+.exhibit-video{
+    width: 100%;
+}
+}
+
+/*Desktop media query*/
+
+@media only screen and (min-width: 768px) {
+.main-mobile {
+    display: none;
+}
+section {
+    display: flex;
+}
+.banner-picture {
+    width: 60%;
+    margin: 32px 24px;
+}
+.article-mobile {
+    display: none;
+}
+.learning-text {
+    padding-left: 16px;
+    background-color: #FFFFFF;
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
+.exhibit-video {
+    margin-left: 24px;
+    margin-right: 24px;
+}   
+}
